@@ -40,11 +40,10 @@ ifeq ($(add-lib-optee),yes)
 BL2_SOURCES		+=	lib/optee/optee_utils.c
 endif
 
-BL2_SOURCES		+=	common/uuid.c
-RESET_TO_BL31		:=	1
 
 ifeq ($(NEED_BL32),yes)
 $(eval $(call add_define,QEMU_LOAD_BL32))
+BL2_SOURCES		+=	common/uuid.c
 endif
 
 # Include GICv3 driver files
