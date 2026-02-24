@@ -189,7 +189,7 @@
  *
  * BL3-2 can execute from Secure SRAM, or Secure DRAM.
  */
-#define BL32_SRAM_BASE			BL_RAM_BASE
+#define BL32_SRAM_BASE			0x30000000
 #define BL32_SRAM_LIMIT			BL2_BASE
 
 #define BL32_MEM_BASE			BL_RAM_BASE
